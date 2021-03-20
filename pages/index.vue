@@ -36,7 +36,17 @@
               </th>
             </tr>
           </thead>
-          <tbody class="text-sm font-normal text-gray-700">
+          <tbody v-if="loading" class="text-sm font-normal text-gray-700">
+            <tr v-for="index in 10" :key="index">
+              <td class="px-4 py-4">
+                <span class="skeleton-box h-4 w-1/2 inline-block" />
+              </td>
+              <td class="px-4 py-4">
+                <span class="skeleton-box h-4 w-1/2 inline-block" />
+              </td>
+            </tr>
+          </tbody>
+          <tbody v-else class="text-sm font-normal text-gray-700">
             <tr v-for="house in listData" :key="house.name" class="hover:bg-gray-100 border-b border-gray-200 py-10">
               <td class="px-4 py-4">
                 {{ house.name }}
@@ -195,4 +205,33 @@ thead tr th:last-child { border-top-right-radius: 10px; border-bottom-right-radi
 
 tbody tr td:first-child { border-top-left-radius: 5px; border-bottom-left-radius: 0px;}
 tbody tr td:last-child { border-top-right-radius: 5px; border-bottom-right-radius: 0px;}
+
+.skeleton-box {
+  position: relative;
+  overflow: hidden;
+  background-color: #e2e8f0;
+
+}
+.skeleton-box::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0.2) 20%,
+    rgba(255, 255, 255, 0.5) 60%,
+    rgba(255, 255, 255, 0)
+  );
+  animation: shimmer 3s infinite;
+  content: '';
+}
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
 </style>
