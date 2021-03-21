@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="text-center text-white mt-4 mb-4">
+    <div class="text-center text-grey-400 mt-4 mb-4 bg-white px-4 py-2 rounded-md">
       <span class="cursor-pointer" @click="toggleModal">Information</span>
     </div>
     <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">

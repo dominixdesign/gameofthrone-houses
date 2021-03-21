@@ -1,14 +1,18 @@
 <template>
   <div>
     <div class="flex justify-between w-full pt-6 ">
-      <h1 class="ml-3">
-        Table of Houses
-      </h1>
+      <div class="flex justify-center w-full">
+        <Icon name="sword-1" class="w-12 h-12" />
+        <h1 class="text-center text-3xl font-bold mx-4">
+          List of Houses
+        </h1>
+        <Icon name="sword-1" class="w-12 h-12" />
+      </div>
     </div>
     <div class="overflow-x-auto mt-6">
       <table class="table-auto border-collapse w-full">
         <thead>
-          <tr class="rounded-lg text-sm font-medium text-gray-700 text-left" style="font-size: 0.9674rem">
+          <tr class="text-sm font-medium text-gray-700 text-left" style="font-size: 0.9674rem">
             <th class="px-4 py-2 bg-gray-200 " style="background-color:#f8f8f8">
               Name
             </th>
@@ -100,6 +104,7 @@
 </template>
 
 <script>
+
 export default {
   data () {
     return {
@@ -131,42 +136,6 @@ export default {
 </script>
 
 <style>
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-
-thead tr th:first-child { border-top-left-radius: 10px; border-bottom-left-radius: 10px;}
-thead tr th:last-child { border-top-right-radius: 10px; border-bottom-right-radius: 10px;}
-
-tbody tr td:first-child { border-top-left-radius: 5px; border-bottom-left-radius: 0px;}
-tbody tr td:last-child { border-top-right-radius: 5px; border-bottom-right-radius: 0px;}
-
 .skeleton-box {
   position: relative;
   overflow: hidden;

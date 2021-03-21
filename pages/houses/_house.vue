@@ -21,14 +21,7 @@
 </template>
 
 <script>
-import HouseDefinition from '~/components/HouseDefinition.vue'
-import Icon from '~/components/Icon.vue'
-
 export default {
-  components: {
-    Icon,
-    HouseDefinition
-  },
   async asyncData ({ params, $axios }) {
     const houseId = await params.house
     const house = await $axios.$get(`https://www.anapioficeandfire.com/api/houses/${houseId}`)

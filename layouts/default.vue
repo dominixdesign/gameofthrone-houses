@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen justify-center items-center mx-auto max-w-screen-lg">
+  <div class="min-h-screen flex flex-col justify-center items-center mx-auto max-w-screen-lg">
     <div class="bg-white pb-4 px-4 rounded-md w-full">
       <Nuxt />
     </div>
