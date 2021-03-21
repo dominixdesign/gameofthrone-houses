@@ -2,8 +2,10 @@
   <div>
     <div class="px-4 py-5 sm:px-6">
       <div class="flex">
-        <Icon name="castle-1" class="flex-none w-6 h-6 mr-2" /> {{ house.name }}
-        <h3 class="flex-grow text-lg leading-6 font-medium text-gray-900" />
+        <Icon name="castle-1" class="flex-none w-6 h-6 mr-2" />
+        <h3 class="flex-grow text-lg leading-6 font-medium text-gray-900">
+          {{ house.name }}
+        </h3>
         <nuxt-link to="/" class="flex-none text-blue-700 underline">
           backt to list of houses
         </nuxt-link>
