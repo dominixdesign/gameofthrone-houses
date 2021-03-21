@@ -16,7 +16,7 @@ export default {
   },
   head: {
     bodyAttrs: {
-      class: 'bg-default'
+      class: 'bg-default bg-cover'
     }
   }
 }
