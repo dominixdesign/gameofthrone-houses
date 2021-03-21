@@ -40,7 +40,7 @@ export default {
         }
         return true
       }
-      if (Array.isArray(this.definition) && this.definition[0] !== '') {
+      if (Array.isArray(this.definition) && this.definition[0] !== '' && this.definition.length > 0) {
         this.definitionComponent = 'HouseDefinitionArray'
         return true
       }
