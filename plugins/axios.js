@@ -1,3 +1,5 @@
+import { cacheAdapterEnhancer, throttleAdapterEnhancer } from 'axios-extensions'
+
 function parseLinkHeader (linkHeader) {
   let arrData = linkHeader.split('link:')
   linkHeader = arrData.length === 2 ? arrData[1] : linkHeader
@@ -14,8 +16,15 @@ function parseLinkHeader (linkHeader) {
   return parsedHeader
 }
 
-export default function ({ $axios, redirect }) {
+export default function ({ $axios, app }) {
+  const defaults = app.$axios.defaults
+
+  // https://github.com/kuitos/axios-extensions
+  defaults.adapter = throttleAdapterEnhancer(cacheAdapterEnhancer(defaults.adapter, true))
+
   $axios.onResponse((response) => {
-    response.data = { data: response.data, links: parseLinkHeader(response.headers.link) }
+    if (!response.data.links && response.headers.link) {
+      response.data = { data: response.data, links: parseLinkHeader(response.headers.link) }
+    }
   })
 }

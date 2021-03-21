@@ -1,8 +1,26 @@
 <template>
-  <div>
-    <Nuxt />
+  <div class="min-h-screen justify-center items-center mx-auto max-w-screen-lg">
+    <div class="bg-white pb-4 px-4 rounded-md w-full">
+      <Nuxt />
+    </div>
+    <Info />
   </div>
 </template>
+
+<script>
+import Info from '~/components/Info'
+
+export default {
+  components: {
+    Info
+  },
+  head: {
+    bodyAttrs: {
+      class: 'bg-default'
+    }
+  }
+}
+</script>
 
 <style>
 html {
