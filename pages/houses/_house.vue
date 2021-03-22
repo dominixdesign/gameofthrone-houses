@@ -3,18 +3,18 @@
     <div class="px-4 py-5 sm:px-6">
       <div class="flex">
         <Icon name="castle-1" class="flex-none w-6 h-6 mr-2" />
-        <h3 class="flex-grow text-lg leading-6 font-medium text-gray-900">
+        <h3 class="flex-grow text-2xl font-medieval leading-6 font-medium text-gray-900">
           {{ house.name }}
         </h3>
-        <nuxt-link to="/" class="flex-none text-blue-700 underline">
+        <nuxt-link to="/" class="flex-none text-red-800 underline">
           backt to list of houses
         </nuxt-link>
       </div>
-      <p class="mt-1 max-w-2xl text-sm text-gray-500">
+      <p class="mt-1 max-w-2xl text-sm text-gray-800">
         {{ house.region }}
       </p>
     </div>
-    <div class="border-t border-gray-200">
+    <div class="border-t border-black">
       <dl>
         <house-definition v-for="property in houseProperties" :key="property.id" :def-title="property.title" :definition="house[property.id]" />
       </dl>

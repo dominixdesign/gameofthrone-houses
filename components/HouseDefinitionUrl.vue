@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nuxt-link v-if="definition.includes('/houses/')" :to="$id(definition)" class="text-blue-700 underline">
+    <nuxt-link v-if="definition.includes('/houses/')" :to="$id(definition)" class="text-red-800 underline">
       {{ name }}
     </nuxt-link>
     <span v-else>{{ name }}</span>

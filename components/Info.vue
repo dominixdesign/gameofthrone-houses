@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="text-center text-grey-400 mt-4 mb-4 bg-white px-4 py-2 rounded-md">
+  <div class="w-full">
+    <div class="text-right text-gray-700 underline w-full py-4 pr-4">
       <span class="cursor-pointer" @click="toggleModal">Information</span>
     </div>
     <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
@@ -26,8 +26,9 @@
               </svg>
             </div>
           </div>
-          <p>Background Image: Jonathan Kemper @ <a class="text-blue-700 underline" href="https://unsplash.com/photos/4_ZvmLAeIZk">unsplash.com</a>.</p>
-          <div>Icons made by <a class="text-blue-700 underline" href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+          <p>Background Image: Jonathan Kemper @ <a class="text-red-800 underline" href="https://unsplash.com/photos/4_ZvmLAeIZk">unsplash.com</a>.</p>
+          <p>Background Image Table Header: Photo by <a class="text-red-800 underline" href="https://unsplash.com/@martberrios?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Martín Berrios</a> on <a class="text-red-800 underline" href="/s/photos/wood-texture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.</p>
+          <div>Icons made by <a class="text-red-800 underline" href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a class="text-red-800 underline" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </div>
       </div>
     </div>
