@@ -82,7 +82,6 @@ export default {
     async getData (url) {
       this.loading = true
       const apidata = await this.$axios.$get(url)
-      console.log(apidata)
       this.listData = apidata.data
       this.links = apidata.links
       this.loading = false
