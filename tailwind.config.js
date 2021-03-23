@@ -2,9 +2,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        default: "url('/img/jonathan-kemper-4_ZvmLAeIZk-unsplash.jpg')",
-        paper: "url('/img/paper-bg.jpg')",
-        wood: "url('/img/martin-berrios-8u3xeBT1HIc-unsplash.jpg')"
+        default: "url('/gameofthrone-houses/img/jonathan-kemper-4_ZvmLAeIZk-unsplash.jpg')",
+        paper: "url('/gameofthrone-houses/img/paper-bg.jpg')",
+        wood: "url('/gameofthrone-houses/img/martin-berrios-8u3xeBT1HIc-unsplash.jpg')"
       }),
       fontFamily: {
         medieval: ['MedievalSharp', 'ui-serif', 'Georgia']
