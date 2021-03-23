@@ -20,6 +20,10 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  
+  router: {
+   base: '/gameofthrone-houses/'
+  }
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
