@@ -23,7 +23,7 @@ export default {
   
   router: {
    base: '/gameofthrone-houses/'
-  }
+  },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
